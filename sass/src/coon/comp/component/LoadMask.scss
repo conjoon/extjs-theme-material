@@ -1,0 +1,73 @@
+/**
+ * conjoon
+ * theme-cn_material
+ * Copyright (C) 2020 Thorsten Suckow-Homberg https://github.com/conjoon/theme-cn_material
+ *
+ * Permission is hereby granted, free of charge, to any person
+ * obtaining a copy of this software and associated documentation
+ * files (the "Software"), to deal in the Software without restriction,
+ * including without limitation the rights to use, copy, modify, merge,
+ * publish, distribute, sublicense, and/or sell copies of the Software,
+ * and to permit persons to whom the Software is furnished to do so,
+ * subject to the following conditions:
+ *
+ * The above copyright notice and this permission notice shall be included
+ * in all copies or substantial portions of the Software.
+ *
+ * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
+ * EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES
+ * OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.
+ * IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM,
+ * DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR
+ * OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE
+ * USE OR OTHER DEALINGS IN THE SOFTWARE.
+ */
+
+.cn_comp-loadmask {
+
+    @include cn-mask();
+
+    .x-mask-msg {
+
+        .x-mask-msg-inner {
+            padding:0px;
+        }
+
+        @include cn-mask-msg-container();
+        display : flex;
+
+        .x-mask-msg-text {
+            padding     : 0px;
+            background  : none;
+            font-weight : bold;
+            text-align  : left;
+            &:before {
+                display : none;
+            }
+        }
+
+        .badge {
+            background-color : var(--base-color);
+            border-radius    : 24px;
+            width            : 50px;
+            margin           : 2px 12px 0px 0px;
+            height           : 50px;
+            color            : var(--color);
+            font-size        : 31px;
+            line-height      : 50px;
+            text-align       : center;
+        }
+
+        .progress {
+            height           : 2px;
+            background-color : var(--base-ighlight-color);
+            margin           : 8px 0px 8px 0px;
+
+            div {
+                height           : 2px;
+                background-color : var(--base-color);
+                transition       : width 0.2s ease-in-out;
+            }
+        }
+    }
+}

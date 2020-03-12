@@ -1,0 +1,93 @@
+/**
+ * conjoon
+ * theme-cn_material
+ * Copyright (C) 2020 Thorsten Suckow-Homberg https://github.com/conjoon/theme-cn_material
+ *
+ * Permission is hereby granted, free of charge, to any person
+ * obtaining a copy of this software and associated documentation
+ * files (the "Software"), to deal in the Software without restriction,
+ * including without limitation the rights to use, copy, modify, merge,
+ * publish, distribute, sublicense, and/or sell copies of the Software,
+ * and to permit persons to whom the Software is furnished to do so,
+ * subject to the following conditions:
+ *
+ * The above copyright notice and this permission notice shall be included
+ * in all copies or substantial portions of the Software.
+ *
+ * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
+ * EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES
+ * OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.
+ * IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM,
+ * DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR
+ * OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE
+ * USE OR OTHER DEALINGS IN THE SOFTWARE.
+ */
+
+.cn_comp-toast {
+
+    @include cn-mask-msg-container();
+
+    height:auto!important;
+    width:auto!important;
+    border:none!important;
+
+    .x-window-body-default {
+       // background-color:$color-soft-darkblue;
+    }
+
+    .x-autocontainer-innerCt {
+        color:var(--color);
+        white-space:nowrap;
+        &:before {
+            font-family  : $fontawesome-font-family;
+            font-size    : 23px;
+            text-align   : center;
+            width        : 56px;
+            height       : 100%;
+            padding-top  : 15px;
+            position     : absolute;
+            top          : 0px;
+            left         : 0px;
+        }
+    }
+
+    &.error {
+        .x-autocontainer-innerCt {
+            &:before {
+                background-color : #fe6464;
+                color            : #f5cc9f;
+                content          : "\f119";
+            }
+        }
+    }
+
+    &.warning {
+        .x-autocontainer-innerCt {
+            &:before {
+                background-color : rgb(255, 178, 66);
+                color            : rgb(255, 233, 201);
+                content          : "\f071";
+            }
+        }
+    }
+
+    /*&.success {
+        .x-autocontainer-innerCt {
+            &:before {
+                background-color : rgb(166, 255, 77);
+                color            : #ffffff;
+                content          : "\f00c";
+            }
+        }
+    }*/
+
+    &.info {
+        .x-autocontainer-innerCt {
+            &:before {
+                background-color : rgb(0, 183, 231);
+                color            : #ffffff;
+                content          : "\f05a";
+            }
+        }
+    }
+}
