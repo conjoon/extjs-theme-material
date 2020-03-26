@@ -34,14 +34,6 @@
         "no-console": ["error", { "allow": ["warn", "error"] }],
         "no-lonely-if": ["error"],
         "eqeqeq": "warn"
-    },
-    "overrides": [
-        {
-            "files": ["./packages/local/dev-*/**"],
-            "rules": {
-                "no-console" : ["off"]
-            }
-        }
-    ]
+    }
 }
 
