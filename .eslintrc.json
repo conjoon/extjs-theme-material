@@ -21,6 +21,10 @@
         "StartTest" : true,
         "Fashion" : true
     },
+    "ignorePatterns" : [
+        "bootstrap.js",
+        "**/build/*"
+    ],
     "rules": {
         "indent": ["error"],
         "linebreak-style": ["error", "unix"],
