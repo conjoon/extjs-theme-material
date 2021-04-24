@@ -1,7 +1,41 @@
 {
     "name": "theme-cn_material",
-
     "sencha": {
+        "coon-js": {
+            "package": {
+                "config": {
+                    "modes" : {
+                        "dark" : {
+                            "name" : "Dark Mode",
+                            "default" : true,
+                            "config" : {
+                                "dark-mode" : "true",
+                                "accent-color": "#35baf6",
+                                "accent-foreground-color": "#6b6b6b",
+                                "base-color": "#35baf6",
+                                "overlay-color": "rgba(0, 0 , 0, .6)",
+                                "color": "#d6d6d6",
+                                "selected-background-color": "#3e4953",
+                                "base-dark-color": "#3e4953"
+                            }
+                        },
+                        "light" : {
+                            "name" : "Light Mode",
+                            "default" : false,
+                            "config" : {
+                                "dark-mode" : "false",
+                                "accent-color" : "#35baf6",
+                                "accent-foreground-color" : "#333333",
+                                "base-color": "#35baf6",
+                                "overlay-color" : "rgba(0, 0 , 0, .5)",
+                                "color": "#484848"
+                            }
+
+                        }
+                    }
+                }
+            }
+        },
         "namespace": "conjoon.theme.material",
         "type": "theme",
         "extend": "theme-material",
@@ -20,8 +54,7 @@
                 }
             ]
         },
-        "output": "${package.dir}/build",
-        "local": true,
+
         "sass" : {
             "namespace": "",
             "etc": [
@@ -34,13 +67,24 @@
                 "${package.dir}/sass/src"
             ]
         },
-        "classpath": [
-            "${package.dir}/src"
-        ],
+        "output": {
+            "base": "${package.dir}/build/${build.id}",
+            "js": {
+                "version": "ES6"
+            }
+        },
+        "compressor": {
+            "polyfills": "none"
+        },
+        "local": true,
         "overrides": [
+            "${package.dir}/src",
             "${package.dir}/overrides"
         ],
+        "example": null,
         "framework": "ext",
-        "requires": []
+        "requires": [
+            "lib-cn_core"
+        ]
     }
 }
