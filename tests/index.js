@@ -86,7 +86,7 @@ harness.start({
             items : [{
                 group : "material",
                 items : [
-                    "./src/MaterialTest.js"
+                    "./src/ThemeTest.js"
                 ]
             }]
         }]
