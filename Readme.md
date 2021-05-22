@@ -33,8 +33,5 @@ This is to identify itself later on for proper inclusion in the coon.js-environm
 
 ## Loading Source Files
 Although the package is registered as a static-theme package, sources such as the ```conjoon.theme.material.Theme```
-cannot be required in a production build if not specified via the ```overrides```-section (instead of 
-the ```classpath```-section) - Production-builds simply do not consider sources residing in in the ```classpath``` specified 
-in the ```package.json``` (Sencha Cmd v7.3.0.19). 
-Thus, this package registers no classpath and uses the ```overrides```-setting instead to make sure all sources
-are made available to the owning application.
+cannot be required in a production build if not specified explicitely. There is a dummy-override in the ```init.js```-file
+defined that makes sure that the class is made available to applications. 

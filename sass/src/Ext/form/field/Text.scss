@@ -1,7 +1,7 @@
 /**
  * conjoon
  * theme-cn_material
- * Copyright (C) 2020 Thorsten Suckow-Homberg https://github.com/conjoon/theme-cn_material
+ * Copyright (C) 2020-2021 Thorsten Suckow-Homberg https://github.com/conjoon/theme-cn_material
  *
  * Permission is hereby granted, free of charge, to any person
  * obtaining a copy of this software and associated documentation
@@ -25,4 +25,13 @@
 
 .x-form-text-default .x-tagfield-input-field {
   color:var(--color);
+}
+
+.x-form-item-label-text {
+  margin-right:10px;
+  color:var(--accent-dark-color);
+}
+
+.x-field-focus .x-form-item-label-text {
+  color:var(--accent-color);
 }

@@ -22,7 +22,17 @@
  * OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE
  * USE OR OTHER DEALINGS IN THE SOFTWARE.
  */
-
+/**
+ * This hack is requires to make sure the Theme-class resource is exposed with
+ * production builds. If the fqn is not required directly by any plugin or the application itself,
+ * ExtJS will not bundle the sources into the build.
+ */
+Ext.define("ov.coon.core.app.Application", {
+    override : "coon.core.app.Application",
+    requires : [
+        "conjoon.theme.material.Theme"
+    ]
+});
 Ext.namespace("Ext.theme.is")["coon-js-theme"] = true;
 Ext.theme.name = "theme-cn_material";
 

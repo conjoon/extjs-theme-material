@@ -1,7 +1,7 @@
 /**
  * conjoon
  * theme-cn_material
- * Copyright (C) 2020-2021 Thorsten Suckow-Homberg https://github.com/conjoon/theme-cn_material
+ * Copyright (C) 2021 Thorsten Suckow-Homberg https://github.com/conjoon/theme-cn_material
  *
  * Permission is hereby granted, free of charge, to any person
  * obtaining a copy of this software and associated documentation
@@ -23,4 +23,13 @@
  * USE OR OTHER DEALINGS IN THE SOFTWARE.
  */
 
-$font-family: dynamic('Roboto', 'Open Sans', 'Helvetica Neue', helvetica, arial, verdana, sans-serif);
+.x-menu-item-focus .x-menu-item-text,
+.x-menu-item-active .x-menu-item-text,
+.x-menu-item-focus .x-menu-item-icon,
+.x-menu-item-active .x-menu-item-icon {
+  color:var(--reverse-color);
+}
+
+.x-menu-item-text-default {
+  font-size:13px;
+}

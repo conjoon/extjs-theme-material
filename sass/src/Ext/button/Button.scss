@@ -1,7 +1,7 @@
 /**
  * conjoon
  * theme-cn_material
- * Copyright (C) 2020 Thorsten Suckow-Homberg https://github.com/conjoon/theme-cn_material
+ * Copyright (C) 2020-2021 Thorsten Suckow-Homberg https://github.com/conjoon/theme-cn_material
  *
  * Permission is hereby granted, free of charge, to any person
  * obtaining a copy of this software and associated documentation
@@ -23,6 +23,84 @@
  * USE OR OTHER DEALINGS IN THE SOFTWARE.
  */
 
-.x-btn.x-btn-menu-active.x-btn-default-small, .x-btn.x-btn-pressed.x-btn-default-small {
-  background-color: var(--base-pressed-color);
+.x-btn.x-btn-menu-active.x-btn-default-toolbar-small,
+.x-btn.x-btn-pressed.x-btn-default-toolbar-small,
+.x-segmented-button .x-btn-pressed {
+  background-color:var(--base-pressed-color)!important;
+}
+
+.x-segmented-button .x-segmented-button-item .x-btn-icon-el {
+  color:var(--base-color);
+}
+
+.x-segmented-button .x-segmented-button-item {
+  background-color:transparent;
+}
+
+.x-btn-disabled .x-btn-icon-el, .x-btn-disabled .x-btn-inner, .x-btn-disabled .x-btn-arrow:after {
+  color:var(--disabled-color)!important;
+}
+
+.x-btn-menu-active  {
+  &.x-split-button {
+    background-color:var(--base-pressed-color)!important;
+  }
+  .x-btn-split:before {
+    background-color:var(--base-pressed-color)!important;
+  }
+}
+
+.x-btn-focus, .x-btn-pressed, .x-arrow-focus, .x-btn-menu-active, .x-btn-menu-active.x-btn-over, .x-btn-pressed.x-btn-over {
+  .x-btn-inner {
+    color:var(--reverse-color)!important;
+  }
+  .x-btn-split:before,
+  .x-btn-split:after,
+  .x-btn-arrow-el:before {
+    background-color:var(--base-pressed-color)!important;
+    color:var(--reverse-color)!important;
+  }
+  .x-btn-arrow-right:after {
+    color: var(--reverse-color)!important;
+  }
+  .x-btn-split-right > .x-btn-button:after {
+    border-right:1px solid var(--reverse-color)!important;
+  }
+  .x-btn-icon-el {
+    color: var(--reverse-color)!important;
+  }
+  .x-btn-arrow:after {
+    color: var(--reverse-color)!important;
+  }
+}
+
+.x-btn-over, .x-btn-arrow-over, .x-arrow-over  {
+
+  &:not(.x-btn-menu-active) {
+    background-color:var(--hovered-background-color)!important;
+  }
+
+  .x-btn-split:before,
+  .x-btn-split:after,
+  .x-btn-arrow-el:before {
+     {
+      color:var(--accent-color)!important;
+    }
+  }
+  .x-btn-inner {
+    color:var(--accent-color)!important;
+  }
+
+  .x-btn-arrow-right:after {
+    color: var(--accent-color)!important;
+  }
+  .x-btn-split-right > .x-btn-button:after {
+    border-right:1px solid var(--accent-color)!important;
+  }
+  .x-btn-icon-el {
+    color: var(--accent-color)!important;
+  }
+  .x-btn-arrow:after {
+    color: var(--accent-color)!important;
+  }
 }

@@ -11,6 +11,7 @@
                             "config" : {
                                 "dark-mode" : "true",
                                 "accent-color": "#35baf6",
+                                "disabled-color" : "rgba(105, 105, 105, 0.38)",
                                 "accent-foreground-color": "#6b6b6b",
                                 "base-color": "#35baf6",
                                 "overlay-color": "rgba(0, 0 , 0, .6)",
@@ -70,16 +71,25 @@
         "output": {
             "base": "${package.dir}/build/${build.id}",
             "js": {
-                "version": "ES6"
+                "version": "ES8"
+            }
+        },
+        "language": {
+            "js": {
+                "input": "ES8",
+                "output": "ES8"
             }
         },
         "compressor": {
+            "type" : "closure",
             "polyfills": "none"
         },
         "local": true,
         "overrides": [
-            "${package.dir}/src",
             "${package.dir}/overrides"
+        ],
+        "classpath": [
+            "${package.dir}/src"
         ],
         "example": null,
         "framework": "ext",
