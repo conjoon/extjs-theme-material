@@ -1,7 +1,7 @@
 /**
  * conjoon
- * theme-cn_material
- * Copyright (C) 2021 Thorsten Suckow-Homberg https://github.com/conjoon/theme-cn_material
+ * extjs-theme-cn_material
+ * Copyright (C) 2021 Thorsten Suckow-Homberg https://github.com/conjoon/extjs-theme-cn_material
  *
  * Permission is hereby granted, free of charge, to any person
  * obtaining a copy of this software and associated documentation
@@ -34,5 +34,5 @@ Ext.define("ov.coon.core.app.Application", {
     ]
 });
 Ext.namespace("Ext.theme.is")["coon-js-theme"] = true;
-Ext.theme.name = "theme-cn_material";
+Ext.theme.name = "extjs-theme-cn_material";
 

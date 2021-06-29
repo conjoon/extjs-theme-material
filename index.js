@@ -1,7 +1,7 @@
 /**
  * conjoon
- * theme-cn_material
- * Copyright (C) 2020-2021 Thorsten Suckow-Homberg https://github.com/conjoon/theme-cn_material
+ * extjs-theme-cn_material
+ * Copyright (C) 2020-2021 Thorsten Suckow-Homberg https://github.com/conjoon/extjs-theme-cn_material
  *
  * Permission is hereby granted, free of charge, to any person
  * obtaining a copy of this software and associated documentation
@@ -23,20 +23,4 @@
  * USE OR OTHER DEALINGS IN THE SOFTWARE.
  */
 
-var conjoon = conjoon || {};
-conjoon.tests = conjoon.tests || {};
-conjoon.tests.config = conjoon.tests.config || {};
-
-
-conjoon.tests.config.paths = {
-    extjs : {
-        js : {
-            url : "[PATH_TO_EXT_ALL.JS]" /*Your path to your ExtJS distribution (e.g. ext-all-debug.js) */
-        },
-        css : {
-            url : "[PATH_TO_EXT_THEME.JS]" /*Your path to an ExtJS theme, preferably Triton Theme */
-        }
-    }
-}
-
-
+// intentionally left empty

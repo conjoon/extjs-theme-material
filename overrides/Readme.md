@@ -1,3 +1,3 @@
-# theme-cn_material/overrides
+# extjs-theme-cn_material/overrides
 
 This folder contains overrides which will automatically be required by package users.

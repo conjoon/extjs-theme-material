@@ -1,8 +1,7 @@
-<!--
 /**
  * conjoon
- * theme-cn_material
- * Copyright (C) 2020-2021 Thorsten Suckow-Homberg https://github.com/conjoon/theme-cn_material
+ * extjs-theme-cn_material
+ * Copyright (C) 2017-2021 Thorsten Suckow-Homberg https://github.com/conjoon/extjs-theme-cn_material
  *
  * Permission is hereby granted, free of charge, to any person
  * obtaining a copy of this software and associated documentation
@@ -23,21 +22,43 @@
  * OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE
  * USE OR OTHER DEALINGS IN THE SOFTWARE.
  */
--->
 
-<!DOCTYPE html>
- <html>
-  <head>
-
-    <!-- Siesta CSS e.g. siesta-all.css-->
-    <link rel="stylesheet" type="text/css" href="[PATH_TO_SIESTA_ALL.CSS]">
-
-    <!-- Siesta application e.g. siesta-all.js -->
-    <script type="text/javascript" src="[PATH_TO_SIESTA_ALL.JS]"></script>
-
-    <!-- The test harness -->
-    <script type="text/javascript" src="tests.config.js"></script>
-    <script type="text/javascript" src="index.js"></script>
-  </head>
-  <body></body>
- </html>
+export default [{
+    group : "classic",
+    items : [{
+        group : "coon",
+        items : [{
+            group : "navport",
+            items : [{
+                group : "view",
+                items : [
+                    "./overrides/src/coon/navport/view/NavigationToolbarTest.js"
+                ]
+            }]
+        }]
+    }]}, {
+    group : "universal",
+    items : [{
+        group : "conjoon",
+        items : [{
+            group : "theme",
+            items : [{
+                group : "material",
+                items : [
+                    "./src/ThemeTest.js"
+                ]
+            }]
+        }]
+    }, {
+        group : "coon",
+        items : [{
+            group : "navport",
+            items : [{
+                group : "view",
+                items : [
+                    "./overrides/src/coon/navport/view/NavigationTreeTest.js"
+                ]
+            }]
+        }]
+    }]
+}];
