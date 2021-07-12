@@ -1,3 +1,3 @@
-# extjs-theme-cn_material/sass/var
+# extjs-theme-material/sass/var
 
 This folder contains variable declaration files named by their component class.

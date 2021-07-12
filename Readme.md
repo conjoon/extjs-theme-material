@@ -1,5 +1,5 @@
-# extjs-theme-cn_material  
-This **Sencha ExtJS** package contains the material theme for development of [conjoon](https://github.com/conjoon) along
+# @conjoon/extjs-theme-material  
+This Sencha ExtJS NPM package contains the material theme for development of [conjoon](https://github.com/conjoon) along
 with its application packages.
 Please note, that this theme serves as a base for pluggable packages, such as 
 [conjoon/app-cn_mail](https://github.com/conjoon/app-cn_mail), where styling information for these 
@@ -8,7 +8,7 @@ This theme extends the Material-Theme of ExtJS. ExtJS > 7.0 is required for this
 
 ## Installation
 ```
-npm install --save-dev @conjoon/extjs-theme-cn_material
+npm install --save-dev @conjoon/extjs-theme-material
 ```
 
 ## Post-Install
@@ -27,7 +27,7 @@ to access SASS-variable definitions.
 This theme automatically registers itself by setting the following global properties:
 ```
 Ext.theme.is["coon-js-theme"] = true;
-Ext.theme.name = "extjs-theme-cn_material";
+Ext.theme.name = "extjs-theme-material";
 ```
 This is to identify itself later on for proper inclusion in the coon.js-environment.
 
@@ -42,5 +42,5 @@ The following naming conventions apply:
 
 #### Namespace
 #### Package name
-`extjs-theme-cn_material`
+`extjs-theme-material`
 

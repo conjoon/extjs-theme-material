@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<project name="extjs-theme-cn_material" default=".help">
+<project name="extjs-theme-material" default=".help">
 
     <script language="javascript">
         <![CDATA[

@@ -1,4 +1,4 @@
-# @conjoon/extjs-theme-cn_material - Tests - Read Me
+# @conjoon/extjs-theme-material - Tests - Read Me
 
 This package uses [Siesta](http://bryntum.com) for Unit-/UI-testing.
 

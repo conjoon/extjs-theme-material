@@ -1,5 +1,5 @@
 {
-  "name": "@conjoon/extjs-theme-cn_material",
+  "name": "@conjoon/extjs-theme-material",
   "sencha": {
     "coon-js": {
       "package": {
@@ -36,12 +36,12 @@
         }
       }
     },
-    "name": "extjs-theme-cn_material",
+    "name": "extjs-theme-material",
     "namespace": "conjoon.theme.material",
     "type": "theme",
     "extend": "theme-material",
     "toolkit": "classic",
-    "creator": "conjoon Open Source Project",
+    "creator": "Thorsten Suckow-Homberg <thorsten@suckow-homberg.de>",
     "summary": "This NPM package contains overrides, sass and css directives for theming the conjoon application along with its packages with a material theme.",
     "version": "1.0.0",
     "compatVersion": "1.0.0",
@@ -108,7 +108,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/conjoon/extjs-theme-cn_material.git"
+    "url": "git+https://github.com/conjoon/extjs-theme-material.git"
   },
   "keywords": [
     "theme",
@@ -125,9 +125,9 @@
   "author": "Thorsten Suckow-Homberg <thorsten@suckow-homberg.de>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/conjoon/extjs-theme-cn_material/issues"
+    "url": "https://github.com/conjoon/extjs-theme-material/issues"
   },
-  "homepage": "https://github.com/conjoon/extjs-theme-cn_material#readme",
+  "homepage": "https://github.com/conjoon/extjs-theme-material#readme",
   "devDependencies": {
     "@coon-js/extjs-lib-core": "file:../../@coon-js/extjs-lib-core",
     "@coon-js/extjs-lib-comp": "file:../../@coon-js/extjs-lib-comp",
