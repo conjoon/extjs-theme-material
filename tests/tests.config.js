@@ -34,30 +34,30 @@ export default {
 
     loaderPath: {
 
-        "conjoon.theme.material.overrides.cn_navport" : "../overrides/coon/navport",
+        "conjoon.theme.material.overrides.cn_navport": "../overrides/coon/navport",
 
-        "conjoon.theme.material" : "../src",
+        "conjoon.theme.material": "../src",
 
         /**
          * Requirements
          */
-        "coon.navport.view" : "../node_modules/@coon-js/extjs-comp-navport/src/view",
+        "coon.navport.view": "../node_modules/@coon-js/extjs-comp-navport/src/view",
 
-        "coon.navport.view.NavigationTree" : "../node_modules/@coon-js/extjs-comp-navport/src/view/NavigationTree.js",
-        "coon.navport.view.NavigationToolbar" : "../node_modules/@coon-js/extjs-comp-navport/classic/src/view/NavigationToolbar.js",
+        "coon.navport.view.NavigationTree": "../node_modules/@coon-js/extjs-comp-navport/src/view/NavigationTree.js",
+        "coon.navport.view.NavigationToolbar": "../node_modules/@coon-js/extjs-comp-navport/classic/src/view/NavigationToolbar.js",
 
 
-        "coon.comp.list" : "../node_modules/@coon-js/extjs-lib-comp/src/list",
-        "coon.comp.form" : "../node_modules/@coon-js/extjs-lib-comp/classic/src/form",
-        "coon.comp.component" : "../node_modules/@coon-js/extjs-lib-comp/classic/src/component",
+        "coon.comp.list": "../node_modules/@coon-js/extjs-lib-comp/src/list",
+        "coon.comp.form": "../node_modules/@coon-js/extjs-lib-comp/classic/src/form",
+        "coon.comp.component": "../node_modules/@coon-js/extjs-lib-comp/classic/src/component",
 
-        "coon.core" : "../node_modules/@coon-js/extjs-lib-core/src",
+        "coon.core": "../node_modules/@coon-js/extjs-lib-core/src",
 
-        "coon.navport.view.controller" : "../node_modules/@coon-js/extjs-comp-navport/src/view/controller",
+        "coon.navport.view.controller": "../node_modules/@coon-js/extjs-comp-navport/src/view/controller",
 
-        "coon.navport.store" : "../node_modules/@coon-js/extjs-comp-navport/src/store",
-        "coon.navport.model" : "../node_modules/@coon-js/extjs-comp-navport/src/model",
-        "coon.navport.data"  : "../node_modules/@coon-js/extjs-comp-navport/src/data"
+        "coon.navport.store": "../node_modules/@coon-js/extjs-comp-navport/src/store",
+        "coon.navport.model": "../node_modules/@coon-js/extjs-comp-navport/src/model",
+        "coon.navport.data": "../node_modules/@coon-js/extjs-comp-navport/src/data"
 
     },
 

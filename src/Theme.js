@@ -35,14 +35,14 @@
  */
 Ext.define("conjoon.theme.material.Theme", {
 
-    extend : "coon.core.Theme",
+    extend: "coon.core.Theme",
 
-    modes : {
-        dark : {
-            name : "Dark Mode",
-            default : true,
-            config : {
-                "dark-mode" : "true",
+    modes: {
+        dark: {
+            name: "Dark Mode",
+            default: true,
+            config: {
+                "dark-mode": "true",
                 "accent-color": "#35baf6",
                 "accent-foreground-color": "#6b6b6b",
                 "base-color": "#35baf6",
@@ -53,15 +53,15 @@ Ext.define("conjoon.theme.material.Theme", {
             }
         },
 
-        light : {
-            name : "Light Mode",
-            default : false,
-            config : {
-                "dark-mode" : "false",
-                "accent-color" : "#35baf6",
-                "accent-foreground-color" : "#333333",
+        light: {
+            name: "Light Mode",
+            default: false,
+            config: {
+                "dark-mode": "false",
+                "accent-color": "#35baf6",
+                "accent-foreground-color": "#333333",
                 "base-color": "#35baf6",
-                "overlay-color" : "rgba(0, 0 , 0, .5)",
+                "overlay-color": "rgba(0, 0 , 0, .5)",
                 "color": "#484848"
             }
             
@@ -74,7 +74,7 @@ Ext.define("conjoon.theme.material.Theme", {
      *
      * @param {String} mode
      */
-    updateMode : function (mode) {
+    updateMode: function (mode) {
 
         const me = this;
 
@@ -96,7 +96,7 @@ Ext.define("conjoon.theme.material.Theme", {
      *
      * @inheritdoc
      */
-    get : function (key) {
+    get: function (key) {
 
         const me = this;
 
@@ -116,14 +116,14 @@ Ext.define("conjoon.theme.material.Theme", {
      *
      * @inheritdoc
      **/
-    set : function (key, value) {
+    set: function (key, value) {
 
         const me = this;
 
         me.callParent(arguments);
 
         if (window.Fashion) {
-            Fashion.css.setVariables({[key] : value});
+            Fashion.css.setVariables({[key]: value});
 
         }
 

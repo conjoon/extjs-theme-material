@@ -28,16 +28,16 @@
  */
 Ext.define("conjoon.theme.material.overrides.cn_navport.view.NavigationToolbar", {
 
-    override : "coon.navport.view.NavigationToolbar",
+    override: "coon.navport.view.NavigationToolbar",
 
-    initComponent : function () {
+    initComponent: function () {
 
         var me = this;
 
         Ext.apply(me.items[0], {
-            cls   : "conjoon-logo",
-            html  : "<div class=\"main-logo\"><div class=\"fas fa-envelope logo\"></div>conjoon</div>",
-            width : 250
+            cls: "conjoon-logo",
+            html: "<div class=\"main-logo\"><div class=\"fas fa-envelope logo\"></div>conjoon</div>",
+            width: 250
         });
 
         delete me.items[1].text;

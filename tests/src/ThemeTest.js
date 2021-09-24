@@ -26,13 +26,13 @@
 describe("conjoon.theme.material.ThemeTest", function (t) {
 
     const FASHIONMOCK = {
-        css : {
-            vars : {},
+        css: {
+            vars: {},
 
-            setVariables : function (obj) {
+            setVariables: function (obj) {
                 this.vars = obj;
             },
-            getVariables : function (){
+            getVariables: function (){
                 return this.vars;
             }
         }
@@ -57,7 +57,7 @@ describe("conjoon.theme.material.ThemeTest", function (t) {
         t.expect(theme.get("somekey")).toBe("someval");
 
         window.Fashion = FASHIONMOCK;
-        Fashion.css.setVariables({"foo" : "bar"});
+        Fashion.css.setVariables({"foo": "bar"});
 
         t.expect(theme._modes["dark"]["config"]["foo"]).toBeUndefined();
         t.expect(theme.get("foo")).toBe("bar");
@@ -84,9 +84,9 @@ describe("conjoon.theme.material.ThemeTest", function (t) {
         const
             theme = Ext.create("conjoon.theme.material.Theme"),
             baseConfig = {
-                "overlay-color" : "blue",
-                "one" : "",
-                "two" : ""
+                "overlay-color": "blue",
+                "one": "",
+                "two": ""
             };
 
         window.Fashion = FASHIONMOCK;
@@ -95,16 +95,16 @@ describe("conjoon.theme.material.ThemeTest", function (t) {
         t.expect(Fashion.css.getVariables()).toEqual(baseConfig);
 
         theme.setModes({
-            "dark2" : {
-                config : {
-                    "dark-mode" : "truthy",
-                    "base-color" : "red"
+            "dark2": {
+                config: {
+                    "dark-mode": "truthy",
+                    "base-color": "red"
                 }
             },
-            "light2" : {
-                config : {
-                    "dark-mode" : "false",
-                    "base-color" : "blue"
+            "light2": {
+                config: {
+                    "dark-mode": "false",
+                    "base-color": "blue"
                 }
             }
         });
@@ -114,8 +114,8 @@ describe("conjoon.theme.material.ThemeTest", function (t) {
         let fashion = Fashion.css.getVariables();
 
         t.expect(fashion).toEqual({
-            "dark-mode" : "truthy",
-            "base-color" : "red"
+            "dark-mode": "truthy",
+            "base-color": "red"
         });
 
     });

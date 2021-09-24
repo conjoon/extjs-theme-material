@@ -24,38 +24,38 @@
  */
 
 export default [{
-    group : "classic",
-    items : [{
-        group : "coon",
-        items : [{
-            group : "navport",
-            items : [{
-                group : "view",
-                items : [
+    group: "classic",
+    items: [{
+        group: "coon",
+        items: [{
+            group: "navport",
+            items: [{
+                group: "view",
+                items: [
                     "./overrides/src/coon/navport/view/NavigationToolbarTest.js"
                 ]
             }]
         }]
     }]}, {
-    group : "universal",
-    items : [{
-        group : "conjoon",
-        items : [{
-            group : "theme",
-            items : [{
-                group : "material",
-                items : [
+    group: "universal",
+    items: [{
+        group: "conjoon",
+        items: [{
+            group: "theme",
+            items: [{
+                group: "material",
+                items: [
                     "./src/ThemeTest.js"
                 ]
             }]
         }]
     }, {
-        group : "coon",
-        items : [{
-            group : "navport",
-            items : [{
-                group : "view",
-                items : [
+        group: "coon",
+        items: [{
+            group: "navport",
+            items: [{
+                group: "view",
+                items: [
                     "./overrides/src/coon/navport/view/NavigationTreeTest.js"
                 ]
             }]

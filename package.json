@@ -103,7 +103,7 @@
   },
   "scripts": {
     "test": "npx ws --port 8091 --static.index tests.redirect.html --open",
-    "postinstall": "npm run setup:tests",
+    "postinstall": "npm run setup:tests && node-git-hooks",
     "setup:tests": "npx extjs-link && siesta-lib-helper"
   },
   "repository": {

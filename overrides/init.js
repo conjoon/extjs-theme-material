@@ -28,8 +28,8 @@
  * ExtJS will not bundle the sources into the build.
  */
 Ext.define("ov.coon.core.app.Application", {
-    override : "coon.core.app.Application",
-    requires : [
+    override: "coon.core.app.Application",
+    requires: [
         "conjoon.theme.material.Theme"
     ]
 });

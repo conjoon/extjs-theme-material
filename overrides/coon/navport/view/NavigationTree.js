@@ -28,8 +28,8 @@
  */
 Ext.define("conjoon.theme.material.overrides.cn_navport.view.NavigationTree", {
 
-    override : "coon.navport.view.NavigationTree",
+    override: "coon.navport.view.NavigationTree",
 
-    ui : "cn_navport-navtree"
+    ui: "cn_navport-navtree"
 
 });
