@@ -1,6 +1,7 @@
 {
   "name": "@conjoon/extjs-theme-material",
   "sencha": {
+    "name": "extjs-theme-material",
     "coon-js": {
       "package": {
         "config": {
@@ -36,7 +37,6 @@
         }
       }
     },
-    "name": "extjs-theme-material",
     "namespace": "conjoon.theme.material",
     "type": "theme",
     "extend": "theme-material",
@@ -103,7 +103,7 @@
   },
   "scripts": {
     "test": "npx ws --port 8091 --static.index tests.redirect.html --open",
-    "postinstall": "npm run setup:tests && node-git-hooks",
+    "prepare": "npm run setup:tests && npx node-git-hooks",
     "setup:tests": "npx extjs-link && siesta-lib-helper"
   },
   "repository": {
@@ -128,13 +128,16 @@
     "url": "https://github.com/conjoon/extjs-theme-material/issues"
   },
   "homepage": "https://github.com/conjoon/extjs-theme-material#readme",
-  "devDependencies": {
+  "dependencies": {
     "@coon-js/extjs-lib-core": "file:../../@coon-js/extjs-lib-core",
     "@coon-js/extjs-lib-comp": "file:../../@coon-js/extjs-lib-comp",
     "@coon-js/extjs-comp-navport": "file:../../@coon-js/extjs-comp-navport",
+    "@l8js/l8": "file:../../@l8js/l8"
+  },
+
+  "devDependencies": {
     "@coon-js/extjs-link": "file:../../@coon-js/extjs-link",
     "@coon-js/siesta-lib-helper": "file:../../@coon-js/siesta-lib-helper",
-    "@l8js/l8": "file:../../@l8js/l8",
     "local-web-server": "^4.2.1",
     "siesta-lite": "^5.5.2",
     "eslint": "^7.28.0"
