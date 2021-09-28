@@ -102,9 +102,11 @@
     "test": "tests"
   },
   "scripts": {
-    "test": "npx ws --port 8091 --static.index tests.redirect.html --open",
-    "prepare": "npm run setup:tests && npx node-git-hooks",
-    "setup:tests": "npx extjs-link && siesta-lib-helper"
+    "build:dev": "npm run build:deps && npm run build:test && npx node-git-hooks",
+    "build:deps": "npm explore @coon-js/siesta-lib-helper npm run build:dev",
+    "build:test": "npx extjs-link && npx siesta-lib-helper",
+    "postversion": "git push && git push --tags",
+    "test": "npx ws --port 8091 --static.index tests.redirect.html --open"
   },
   "repository": {
     "type": "git",
@@ -129,17 +131,16 @@
   },
   "homepage": "https://github.com/conjoon/extjs-theme-material#readme",
   "dependencies": {
-    "@coon-js/extjs-lib-core": "file:../../@coon-js/extjs-lib-core",
-    "@coon-js/extjs-lib-comp": "file:../../@coon-js/extjs-lib-comp",
-    "@coon-js/extjs-comp-navport": "file:../../@coon-js/extjs-comp-navport",
-    "@l8js/l8": "file:../../@l8js/l8"
+    "@coon-js/extjs-comp-navport": "^0.1.1",
+    "@coon-js/extjs-lib-comp": "^0.1.0",
+    "@coon-js/extjs-lib-core": "^0.6.0",
+    "@l8js/l8": "^0.4.2"
   },
-
   "devDependencies": {
-    "@coon-js/extjs-link": "file:../../@coon-js/extjs-link",
-    "@coon-js/siesta-lib-helper": "file:../../@coon-js/siesta-lib-helper",
+    "@coon-js/extjs-link": "^0.1.4",
+    "@coon-js/siesta-lib-helper": "^0.1.9",
+    "eslint": "^7.28.0",
     "local-web-server": "^4.2.1",
-    "siesta-lite": "^5.5.2",
-    "eslint": "^7.28.0"
+    "siesta-lite": "^5.5.2"
   }
 }
