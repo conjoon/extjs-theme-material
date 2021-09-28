@@ -1,90 +1,146 @@
 {
-    "name": "theme-cn_material",
-    "sencha": {
-        "coon-js": {
-            "package": {
-                "config": {
-                    "modes" : {
-                        "dark" : {
-                            "name" : "Dark Mode",
-                            "default" : true,
-                            "config" : {
-                                "dark-mode" : "true",
-                                "accent-color": "#35baf6",
-                                "accent-foreground-color": "#6b6b6b",
-                                "base-color": "#35baf6",
-                                "overlay-color": "rgba(0, 0 , 0, .6)",
-                                "color": "#d6d6d6",
-                                "selected-background-color": "#3e4953",
-                                "base-dark-color": "#3e4953"
-                            }
-                        },
-                        "light" : {
-                            "name" : "Light Mode",
-                            "default" : false,
-                            "config" : {
-                                "dark-mode" : "false",
-                                "accent-color" : "#35baf6",
-                                "accent-foreground-color" : "#333333",
-                                "base-color": "#35baf6",
-                                "overlay-color" : "rgba(0, 0 , 0, .5)",
-                                "color": "#484848"
-                            }
-
-                        }
-                    }
-                }
+  "name": "@conjoon/extjs-theme-material",
+  "sencha": {
+    "name": "extjs-theme-material",
+    "coon-js": {
+      "package": {
+        "config": {
+          "modes": {
+            "dark": {
+              "name": "Dark Mode",
+              "default": true,
+              "config": {
+                "dark-mode": "true",
+                "accent-color": "#35baf6",
+                "disabled-color": "rgba(105, 105, 105, 0.38)",
+                "accent-foreground-color": "#6b6b6b",
+                "base-color": "#35baf6",
+                "overlay-color": "rgba(0, 0 , 0, .6)",
+                "color": "#d6d6d6",
+                "selected-background-color": "#3e4953",
+                "base-dark-color": "#3e4953"
+              }
+            },
+            "light": {
+              "name": "Light Mode",
+              "default": false,
+              "config": {
+                "dark-mode": "false",
+                "accent-color": "#35baf6",
+                "accent-foreground-color": "#333333",
+                "base-color": "#35baf6",
+                "overlay-color": "rgba(0, 0 , 0, .5)",
+                "color": "#484848"
+              }
             }
-        },
-        "namespace": "conjoon.theme.material",
-        "type": "theme",
-        "extend": "theme-material",
-        "toolkit": "classic",
-        "creator": "conjoon Open Source Project",
-        "summary": "The default theme for conjoon.",
-        "detailedDescription": "This package contains overrides, sass and css directives for theming the conjoon application along with its packages.",
-        "version": "1.0.0",
-        "compatVersion": "1.0.0",
-        "format": "1",
-        "slicer": {
-            "js": [
-                {
-                    "path": "${package.dir}/sass/example/custom.js",
-                    "isWidgetManifest": true
-                }
-            ]
-        },
-
-        "sass" : {
-            "namespace": "",
-            "etc": [
-                "${package.dir}/sass/etc/all.scss"
-             ],
-            "var": [
-                "${package.dir}/sass/var"
-            ],
-            "src": [
-                "${package.dir}/sass/src"
-            ]
-        },
-        "output": {
-            "base": "${package.dir}/build/${build.id}",
-            "js": {
-                "version": "ES6"
-            }
-        },
-        "compressor": {
-            "polyfills": "none"
-        },
-        "local": true,
-        "overrides": [
-            "${package.dir}/src",
-            "${package.dir}/overrides"
-        ],
-        "example": null,
-        "framework": "ext",
-        "requires": [
-            "lib-cn_core"
-        ]
-    }
+          }
+        }
+      }
+    },
+    "namespace": "conjoon.theme.material",
+    "type": "theme",
+    "extend": "theme-material",
+    "toolkit": "classic",
+    "creator": "Thorsten Suckow-Homberg <thorsten@suckow-homberg.de>",
+    "summary": "This NPM package contains overrides, sass and css directives for theming the conjoon application along with its packages with a material theme.",
+    "version": "1.0.0",
+    "compatVersion": "1.0.0",
+    "format": "1",
+    "slicer": {
+      "js": [
+        {
+          "path": "${package.dir}/sass/example/custom.js",
+          "isWidgetManifest": true
+        }
+      ]
+    },
+    "sass": {
+      "namespace": "",
+      "etc": [
+        "${package.dir}/sass/etc/all.scss"
+      ],
+      "var": [
+        "${package.dir}/sass/var"
+      ],
+      "src": [
+        "${package.dir}/sass/src"
+      ]
+    },
+    "output": {
+      "base": "${package.dir}/build/${build.id}",
+      "js": {
+        "version": "ES8"
+      }
+    },
+    "language": {
+      "js": {
+        "input": "ES8",
+        "output": "ES8"
+      }
+    },
+    "compressor": {
+      "type": "closure",
+      "polyfills": "none"
+    },
+    "local": true,
+    "overrides": [
+      "${package.dir}/overrides"
+    ],
+    "classpath": [
+      "${package.dir}/src"
+    ],
+    "example": null,
+    "framework": "ext",
+    "requires": [
+      "extjs-lib-core"
+    ]
+  },
+  "description": "This NPM package contains overrides, sass and css directives for theming the conjoon application along with its packages with a material theme.",
+  "version": "0.0.1",
+  "main": "index.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "build:dev": "npm run build:deps && npm run build:test && npx node-git-hooks",
+    "build:deps": "npm explore @coon-js/siesta-lib-helper npm run build:dev",
+    "build:test": "npx extjs-link && npx siesta-lib-helper",
+    "postversion": "git push && git push --tags",
+    "test": "npx ws --port 8091 --static.index tests.redirect.html --open"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/conjoon/extjs-theme-material.git"
+  },
+  "keywords": [
+    "theme",
+    "extjs",
+    "ext",
+    "sencha",
+    "javascript",
+    "coon-js",
+    "l8js",
+    "l8.js",
+    "l8",
+    "material"
+  ],
+  "author": "Thorsten Suckow-Homberg <thorsten@suckow-homberg.de>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/conjoon/extjs-theme-material/issues"
+  },
+  "homepage": "https://github.com/conjoon/extjs-theme-material#readme",
+  "dependencies": {
+    "@coon-js/extjs-comp-navport": "^0.1.1",
+    "@coon-js/extjs-lib-comp": "^0.1.0",
+    "@coon-js/extjs-lib-core": "^0.6.0",
+    "@l8js/l8": "^0.4.2"
+  },
+  "devDependencies": {
+    "@coon-js/extjs-link": "^0.1.4",
+    "@coon-js/siesta-lib-helper": "^0.1.9",
+    "eslint": "^7.28.0",
+    "local-web-server": "^4.2.1",
+    "siesta-lite": "^5.5.2"
+  }
 }

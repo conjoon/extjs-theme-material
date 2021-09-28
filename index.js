@@ -23,13 +23,4 @@
  * USE OR OTHER DEALINGS IN THE SOFTWARE.
  */
 
-.cn_comp-lockingwindow {
-
-    .x-window-body {}
-
-    &.x-window-default {
-         border        : none;
-         border-radius : 0px;
-         padding       : 0;
-    }
-}
+// intentionally left empty

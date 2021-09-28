@@ -1,7 +1,7 @@
 /**
  * conjoon
  * extjs-theme-material
- * Copyright (C) 2020-2021 Thorsten Suckow-Homberg https://github.com/conjoon/extjs-theme-material
+ * Copyright (C) 2017-2021 Thorsten Suckow-Homberg https://github.com/conjoon/extjs-theme-material
  *
  * Permission is hereby granted, free of charge, to any person
  * obtaining a copy of this software and associated documentation
@@ -23,13 +23,42 @@
  * USE OR OTHER DEALINGS IN THE SOFTWARE.
  */
 
-.cn_comp-lockingwindow {
-
-    .x-window-body {}
-
-    &.x-window-default {
-         border        : none;
-         border-radius : 0px;
-         padding       : 0;
-    }
-}
+export default [{
+    group: "classic",
+    items: [{
+        group: "coon",
+        items: [{
+            group: "navport",
+            items: [{
+                group: "view",
+                items: [
+                    "./overrides/src/coon/navport/view/NavigationToolbarTest.js"
+                ]
+            }]
+        }]
+    }]}, {
+    group: "universal",
+    items: [{
+        group: "conjoon",
+        items: [{
+            group: "theme",
+            items: [{
+                group: "material",
+                items: [
+                    "./src/ThemeTest.js"
+                ]
+            }]
+        }]
+    }, {
+        group: "coon",
+        items: [{
+            group: "navport",
+            items: [{
+                group: "view",
+                items: [
+                    "./overrides/src/coon/navport/view/NavigationTreeTest.js"
+                ]
+            }]
+        }]
+    }]
+}];

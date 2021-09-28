@@ -1,7 +1,7 @@
 /**
  * conjoon
- * theme-cn_material
- * Copyright (C) 2020-2021 Thorsten Suckow-Homberg https://github.com/conjoon/theme-cn_material
+ * extjs-theme-material
+ * Copyright (C) 2020-2021 Thorsten Suckow-Homberg https://github.com/conjoon/extjs-theme-material
  *
  * Permission is hereby granted, free of charge, to any person
  * obtaining a copy of this software and associated documentation
@@ -28,8 +28,8 @@
  */
 Ext.define("conjoon.theme.material.overrides.cn_navport.view.NavigationTree", {
 
-    override : "coon.navport.view.NavigationTree",
+    override: "coon.navport.view.NavigationTree",
 
-    ui : "cn_navport-navtree"
+    ui: "cn_navport-navtree"
 
 });

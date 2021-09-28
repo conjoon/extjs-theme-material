@@ -1,3 +1,3 @@
-# theme-cn_material/licenses
+# extjs-theme-material/licenses
 
 This folder contains the supported licenses for third-party use.

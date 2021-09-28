@@ -1,7 +1,7 @@
 /**
  * conjoon
  * extjs-theme-material
- * Copyright (C) 2020-2021 Thorsten Suckow-Homberg https://github.com/conjoon/extjs-theme-material
+ * Copyright (C) 2021 Thorsten Suckow-Homberg https://github.com/conjoon/extjs-theme-material
  *
  * Permission is hereby granted, free of charge, to any person
  * obtaining a copy of this software and associated documentation
@@ -23,13 +23,7 @@
  * USE OR OTHER DEALINGS IN THE SOFTWARE.
  */
 
-.cn_comp-lockingwindow {
 
-    .x-window-body {}
-
-    &.x-window-default {
-         border        : none;
-         border-radius : 0px;
-         padding       : 0;
-    }
+.x-tool {
+  font-size:14px;
 }

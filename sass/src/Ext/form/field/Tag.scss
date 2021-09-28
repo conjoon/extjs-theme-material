@@ -1,7 +1,7 @@
 /**
  * conjoon
- * theme-cn_material
- * Copyright (C) 2020 Thorsten Suckow-Homberg https://github.com/conjoon/theme-cn_material
+ * extjs-theme-material
+ * Copyright (C) 2020-2021 Thorsten Suckow-Homberg https://github.com/conjoon/extjs-theme-material
  *
  * Permission is hereby granted, free of charge, to any person
  * obtaining a copy of this software and associated documentation
@@ -23,12 +23,39 @@
  * USE OR OTHER DEALINGS IN THE SOFTWARE.
  */
 
-.x-form-text-default .x-tagfield-item {
-  background-color: var(--reverse-background-color);
-  border: 1px solid var(--reverse-background-color);
-  color: var(--reverse-color);
+.x-tagfield {
+  min-height: 32px;
+}
+
+.x-form-text-default .x-tagfield-item:hover {
+  background-color: var(--hovered-background-color);
+  border-color: var(--hovered-background-color);
 }
 
 .x-form-text-default .x-tagfield-item-close {
-  color: var(--reverse-color);
+  right: 2px;
+}
+
+.x-form-text-default .x-tagfield-item.x-tagfield-item-selected {
+  background-color: var(--selected-background-color);
+  border-color: var(--selected-background-color);
+}
+
+.x-form-text-default .x-tagfield-item {
+  background-color: var(--accent-dark-color);
+  border: 1px solid var(--accent-dark-color);
+  color: var(--accent-light-color);
+}
+
+.x-form-text-default .x-tagfield-item-close {
+  color: var(--accent-light-color);
+}
+
+.x-form-text-default .x-tagfield-input-field {
+  height:24px;
+  line-height:24px;
+}
+.x-form-text-default .x-tagfield-input,
+.x-form-text-default .x-tagfield-item {
+  margin: 2px 8px 2px 0;
 }

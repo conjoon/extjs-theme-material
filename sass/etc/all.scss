@@ -1,7 +1,7 @@
 /**
  * conjoon
- * theme-cn_material
- * Copyright (C) 2020 Thorsten Suckow-Homberg https://github.com/conjoon/theme-cn_material
+ * extjs-theme-material
+ * Copyright (C) 2020-2021 Thorsten Suckow-Homberg https://github.com/conjoon/extjs-theme-material
  *
  * Permission is hereby granted, free of charge, to any person
  * obtaining a copy of this software and associated documentation
@@ -38,15 +38,26 @@
   @include cn-box-shadow(3px, 3px, 6px, -2px, rgba(0,0,0,0.2));
 }
 
-
 @mixin cn-mask-msg-container() {
   @include cn-box-shadow(3px, 3px, 6px, -3px, rgba(0,0,0,0.2));
   border: 1px solid var(--background-color) !important;
   border-radius : 6px !important;
 }
 
-
-
 @mixin cn-mask() {
   background-color: var(--overlay-color)!important;
+}
+
+
+::-webkit-scrollbar {
+  width: 8px;  // for vertical scrollbars
+  height: 8px; // for horizontal scrollbars
+}
+
+::-webkit-scrollbar-track {
+  background: var(--reverse-color);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--accent-foreground-color);
 }

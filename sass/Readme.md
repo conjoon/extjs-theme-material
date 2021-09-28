@@ -1,7 +1,7 @@
-# theme-cn_material/sass
+# extjs-theme-material/sass
 
 This folder contains SASS files of various kinds, organized in sub-folders:
 
-    theme-cn_material/sass/etc
-    theme-cn_material/sass/src
-    theme-cn_material/sass/var
+    extjs-theme-material/sass/etc
+    extjs-theme-material/sass/src
+    extjs-theme-material/sass/var
