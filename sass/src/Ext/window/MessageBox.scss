@@ -23,12 +23,13 @@
  * USE OR OTHER DEALINGS IN THE SOFTWARE.
  */
 
-.x-window-header-title-default {
-  color:var(--color);
+.x-message-box .x-window-body {
+  background-color:var(--background-color);
 }
 
-.x-window-body-default,
-.x-window-default {
-  color:var(--color);
-  background-color:var(--background-color);
+.x-message-box-warning,
+.x-message-box-question,
+.x-message-box-error,
+.x-message-box-info {
+  color: var(--accent-color);
 }
