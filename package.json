@@ -92,7 +92,8 @@
     "example": null,
     "framework": "ext",
     "requires": [
-      "extjs-lib-core"
+      "extjs-lib-core",
+      "extjs-comp-navport"
     ]
   },
   "description": "This NPM package contains overrides, sass and css directives for theming the conjoon application along with its packages with a material theme.",
