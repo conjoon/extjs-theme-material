@@ -24,3 +24,8 @@
  */
 
 $font-family: dynamic('Roboto', 'Open Sans', 'Helvetica Neue', helvetica, arial, verdana, sans-serif);
+
+.x-body {
+  background:var(--background-color);
+  overflow: hidden!important;
+}
