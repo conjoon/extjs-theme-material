@@ -97,7 +97,7 @@
     ]
   },
   "description": "This NPM package contains overrides, sass and css directives for theming the conjoon application along with its packages with a material theme.",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "main": "index.js",
   "directories": {
     "test": "tests"
