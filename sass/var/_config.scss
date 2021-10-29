@@ -29,3 +29,12 @@ $font-family: dynamic('Roboto', 'Open Sans', 'Helvetica Neue', helvetica, arial,
   background:var(--background-color);
   overflow: hidden!important;
 }
+
+$warning-background: dynamic(rgb(255, 178, 66));
+$warning-color: dynamic(rgb(255, 255, 255));
+
+$info-background: dynamic(rgb(0, 183, 231));
+$info-color: dynamic(#ffffff);
+
+$success-background:dynamic(#26cc00);
+$success-color:dynamic(#000000);

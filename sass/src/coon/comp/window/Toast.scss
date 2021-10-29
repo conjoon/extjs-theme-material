@@ -54,8 +54,8 @@
     &.error {
         .x-autocontainer-innerCt {
             &:before {
-                background-color : #fe6464;
-                color            : #f5cc9f;
+                background-color : var(--alert-color);
+                color            : var(--base-foreground-color);
                 content          : "\f119";
             }
         }
@@ -64,8 +64,8 @@
     &.warning {
         .x-autocontainer-innerCt {
             &:before {
-                background-color : rgb(255, 178, 66);
-                color            : rgb(255, 233, 201);
+                background-color : $warning-background;
+                color            : $warning-color;
                 content          : "\f071";
             }
         }
@@ -84,8 +84,8 @@
     &.info {
         .x-autocontainer-innerCt {
             &:before {
-                background-color : rgb(0, 183, 231);
-                color            : #ffffff;
+                background-color : $info-background;
+                color            : $info-color;
                 content          : "\f05a";
             }
         }
