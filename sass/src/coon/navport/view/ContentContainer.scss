@@ -25,4 +25,15 @@
 
 .cn_navport-conctr {
   background-color:var(--background-color);
+
+  &:after {
+    font-family : $fontawesome-font-family;
+    content:"\f7b6";
+    position:relative;
+    top:50%;
+    left:50%;
+    font-size:32px;
+    color:var(--color);
+    text-shadow:6px 6px 4px rgba(0, 0, 0, 34%);
+  }
 }
