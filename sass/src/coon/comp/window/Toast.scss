@@ -64,8 +64,8 @@
     &.warning {
         .x-autocontainer-innerCt {
             &:before {
-                background-color : $warning-background;
-                color            : $warning-color;
+                background-color : var(--warning-background-color);
+                color            : var(--warning-color);
                 content          : "\f071";
             }
         }
@@ -84,8 +84,8 @@
     &.info {
         .x-autocontainer-innerCt {
             &:before {
-                background-color : $info-background;
-                color            : $info-color;
+                background-color : var(--info-background-color);;
+                color            : var(--info-color);
                 content          : "\f05a";
             }
         }

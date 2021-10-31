@@ -73,15 +73,15 @@
 
 
         &.info {
-            background-color: $info-background;
+            background-color: var(--info-background-color);
         }
 
         &.warning {
-            background-color: $warning-background;
+            background-color: var(--warning-background-color);
         }
 
         &.success {
-            background-color: $success-background;
+            background-color:var(--success-background-color);
         }
 
         &.alert {

@@ -30,11 +30,25 @@ $font-family: dynamic('Roboto', 'Open Sans', 'Helvetica Neue', helvetica, arial,
   overflow: hidden!important;
 }
 
-$warning-background: dynamic(rgb(255, 178, 66));
+$signal-color: dynamic(if($dark-mode, #d4f400, #f300ff));
+$warning-background-color: dynamic(rgb(255, 178, 66));
 $warning-color: dynamic(rgb(255, 255, 255));
 
-$info-background: dynamic(rgb(0, 183, 231));
+$info-background-color: dynamic(rgb(0, 183, 231));
 $info-color: dynamic(#ffffff);
 
-$success-background:dynamic(#26cc00);
+$success-background-color:dynamic(#26cc00);
 $success-color:dynamic(#000000);
+
+
+@if ($enable-css-variables) {
+  #{$css-variable-selector} {
+    --signal-color: export;
+    --warning-background-color: export;
+    --warning-color: export;
+    --info-background-color: export;
+    --info-color: export;
+    --success-background-color: export;
+    --success-color: export;
+  }
+}
