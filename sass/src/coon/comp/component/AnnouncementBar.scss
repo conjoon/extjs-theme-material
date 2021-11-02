@@ -74,6 +74,15 @@
 
         &.info {
             background-color: var(--info-background-color);
+
+            .msg,
+            .link,
+            .yes,
+            .no {
+                color: var(--info-color);
+            }
+
+            color: var(--info-color);
         }
 
         &.warning {
