@@ -84,7 +84,7 @@
     &.info {
         .x-autocontainer-innerCt {
             &:before {
-                background-color : var(--info-background-color);;
+                background-color : var(--info-background-color);
                 color            : var(--info-color);
                 content          : "\f05a";
             }
