@@ -26,6 +26,20 @@
 export default [{
     group: "classic",
     items: [{
+        group: "conjoon",
+        items: [{
+            group: "theme",
+            items: [{
+                group: "material",
+                items: [{
+                    group: "plugin",
+                    items: [
+                        "./classic/src/plugin/ModeSwitchPluginTest.js"
+                    ]
+                }]
+            }]
+        }]
+    }, {
         group: "coon",
         items: [{
             group: "navport",

@@ -30,7 +30,7 @@ $font-family: dynamic('Roboto', 'Open Sans', 'Helvetica Neue', helvetica, arial,
   overflow: hidden!important;
 }
 
-$signal-color: dynamic(if($dark-mode, #d4f400, #f300ff));
+$signal-color: dynamic(if($dark-mode, #d4f400, #ff4500));
 $warning-background-color: dynamic(rgb(255, 178, 66));
 $warning-color: dynamic(rgb(255, 255, 255));
 
