@@ -27,6 +27,9 @@
 .x-btn.x-btn-pressed.x-btn-default-toolbar-small,
 .x-segmented-button .x-btn-pressed {
   background-color:var(--base-pressed-color)!important;
+    .x-btn-inner {
+      filter: none !important;
+    }
 }
 
 .x-segmented-button .x-segmented-button-item .x-btn-icon-el {
@@ -34,7 +37,12 @@
 }
 
 .x-segmented-button .x-segmented-button-item {
-  background-color:transparent;
+  &.cn-emojibtn {
+    .x-btn-inner {
+      filter: unquote("brightness(0.5)");
+    }
+  }
+  background-color:var(--background-color);
 }
 
 .x-btn-disabled .x-btn-icon-el, .x-btn-disabled .x-btn-inner, .x-btn-disabled .x-btn-arrow:after {
@@ -89,6 +97,7 @@
   }
   .x-btn-inner {
     color:var(--accent-color)!important;
+    filter: none !important;
   }
 
   .x-btn-arrow-right:after {
@@ -103,4 +112,8 @@
   .x-btn-arrow:after {
     color: var(--accent-color)!important;
   }
+}
+
+.x-btn-default-toolbar-small {
+  padding:8px 12px 8px 12px;
 }

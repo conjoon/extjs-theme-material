@@ -87,7 +87,8 @@
       "${package.dir}/overrides"
     ],
     "classpath": [
-      "${package.dir}/src"
+      "${package.dir}/src",
+      "${package.dir}/${toolkit.name}/src"
     ],
     "example": null,
     "framework": "ext",
