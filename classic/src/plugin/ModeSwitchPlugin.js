@@ -55,16 +55,15 @@ Ext.define("conjoon.theme.material.plugin.ModeSwitchPlugin", {
                 xtype: "segmentedbutton",
                 items: [{
                     xtype: "button",
-                    cls: "cn-emojibtn",
+                    iconCls: "fas fa-sun",
                     scale: "small",
-                    text: "☀️",
                     pressed: theme.getMode() === "light",
                     handler: () => theme.setMode("light")
                 }, {
                     xtype: "button",
                     scale: "small",
                     cls: "cn-emojibtn",
-                    text: "🌙",
+                    iconCls: "fas fa-moon",
                     pressed: theme.getMode() === "dark",
                     handler: () => theme.setMode("dark")
                 }]
