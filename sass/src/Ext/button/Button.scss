@@ -30,6 +30,10 @@
     .x-btn-inner {
       filter: none !important;
     }
+
+  &.x-btn-disabled {
+    background-color:var(--disabled-color)!important;
+  }
 }
 
 .x-segmented-button .x-segmented-button-item .x-btn-icon-el {
