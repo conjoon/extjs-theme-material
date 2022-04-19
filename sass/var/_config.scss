@@ -1,7 +1,7 @@
 /**
  * conjoon
  * extjs-theme-material
- * Copyright (C) 2020-2021 Thorsten Suckow-Homberg https://github.com/conjoon/extjs-theme-material
+ * Copyright (C) 2020-2022 Thorsten Suckow-Homberg https://github.com/conjoon/extjs-theme-material
  *
  * Permission is hereby granted, free of charge, to any person
  * obtaining a copy of this software and associated documentation
@@ -30,6 +30,8 @@ $font-family: dynamic('Roboto', 'Open Sans', 'Helvetica Neue', helvetica, arial,
   overflow: hidden!important;
 }
 
+
+$signal-color-alt: dynamic(if($dark-mode, #ff4398, #ff4398));
 $signal-color: dynamic(if($dark-mode, #d4f400, #ff4500));
 $warning-background-color: dynamic(rgb(255, 178, 66));
 $warning-color: dynamic(rgb(255, 255, 255));
@@ -44,6 +46,7 @@ $success-color:dynamic(#000000);
 @if ($enable-css-variables) {
   #{$css-variable-selector} {
     --signal-color: export;
+    --signal-color-alt: export;
     --warning-background-color: export;
     --warning-color: export;
     --info-background-color: export;
