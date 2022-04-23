@@ -60,6 +60,7 @@ Ext.define("conjoon.theme.material.Theme", {
                 "dark-mode": "false",
                 "accent-color": "#35baf6",
                 "accent-foreground-color": "#333333",
+                "base-foreground-color": "#333333",
                 "base-color": "#35baf6",
                 "overlay-color": "rgba(0, 0 , 0, .5)",
                 "color": "#484848"
