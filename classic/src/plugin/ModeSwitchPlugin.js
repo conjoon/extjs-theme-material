@@ -1,7 +1,7 @@
 /**
  * conjoon
  * extjs-theme-material
- * Copyright (C) 2021 Thorsten Suckow-Homberg https://github.com/conjoon/extjs-app-imapuser
+ * Copyright (C) 2021-2022 Thorsten Suckow-Homberg https://github.com/conjoon/extjs-app-imapuser
  *
  * Permission is hereby granted, free of charge, to any person
  * obtaining a copy of this software and associated documentation
@@ -52,21 +52,13 @@ Ext.define("conjoon.theme.material.plugin.ModeSwitchPlugin", {
         targetCmp.addPermanentNavigation({
             index: 1,
             items: [{
-                xtype: "segmentedbutton",
-                items: [{
-                    xtype: "button",
-                    iconCls: "fas fa-sun",
-                    scale: "small",
-                    pressed: theme.getMode() === "light",
-                    handler: () => theme.setMode("light")
-                }, {
-                    xtype: "button",
-                    scale: "small",
-                    cls: "cn-emojibtn",
-                    iconCls: "fas fa-moon",
-                    pressed: theme.getMode() === "dark",
-                    handler: () => theme.setMode("dark")
-                }]
+                xtype: "button",
+                iconCls: theme.getMode() === "light" ? "fas fa-sun" : "fas fa-moon",
+                scale: "small",
+                handler: btn => {
+                    btn.setIconCls(theme.getMode() === "light" ? "fas fa-moon" : "fas fa-sun");
+                    theme.setMode(theme.getMode() === "light" ? "dark" : "light");
+                }
             }]
         });
     }
