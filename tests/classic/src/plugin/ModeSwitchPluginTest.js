@@ -1,7 +1,7 @@
 /**
  * conjoon
  * extjs-theme-material
- * Copyright (C) 2021 Thorsten Suckow-Homberg https://github.com/conjoon/extjs-theme-material
+ * Copyright (C) 2021-2022 Thorsten Suckow-Homberg https://github.com/conjoon/extjs-theme-material
  *
  * Permission is hereby granted, free of charge, to any person
  * obtaining a copy of this software and associated documentation
@@ -32,11 +32,11 @@ describe("conjoon.theme.material.ThemeTest", function (t) {
 
     t.it("plugin", function (t) {
 
-        let permaNav, mode, currentMode = "dark";
+        let permaNav, mode = undefined;
         const
             plugin = Ext.create("conjoon.theme.material.plugin.ModeSwitchPlugin"),
             themeMock = {
-                getMode: () => currentMode,
+                getMode: () => mode,
                 setMode: newMode => mode = newMode
             },
             cmpMock = {},
@@ -54,25 +54,23 @@ describe("conjoon.theme.material.ThemeTest", function (t) {
         t.expect(cmpSpy.calls.count()).toBe(1);
         t.expect(cmpSpy.calls.mostRecent().args[0]).toBe(permaNav);
 
-        const
-            lightButton = permaNav.items[0].items[0],
-            darkButton =  permaNav.items[0].items[1];
+        const button = Object.assign(permaNav.items[0], {setIconCls: function (iconCls) {this.iconCls = iconCls;}});
 
-        t.expect(lightButton.pressed).toBe(false);
-        t.expect(darkButton.pressed).toBe(true);
+        t.expect(button.iconCls).toBe("fas fa-moon");
 
         t.expect(mode).toBeUndefined();
-        lightButton.handler();
-        t.expect(mode).toBe("light");
 
-        darkButton.handler();
+        button.handler(button);
+        t.expect(mode).toBe("light");
+        t.expect(button.iconCls).toBe("fas fa-sun");
+
+        button.handler(button);
         t.expect(mode).toBe("dark");
 
-        currentMode = "light";
+        mode = "light";
         plugin.init(tbar);
 
-        t.expect(permaNav.items[0].items[0].pressed).toBe(true);
-        t.expect(permaNav.items[0].items[1].pressed).toBe(false);
+        t.expect(permaNav.items[0].iconCls).toBe("fas fa-sun");
 
         [themeSpy, cmpSpy].map(spy => spy.remove());
     });
