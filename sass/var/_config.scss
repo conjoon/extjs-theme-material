@@ -30,13 +30,17 @@ $font-family: dynamic('Roboto', 'Open Sans', 'Helvetica Neue', helvetica, arial,
   overflow: hidden!important;
 }
 
+div, span, td, tr, table, a, ul, li, ::-webkit-scrollbar-track, ::-webkit-scrollbar-thumb  {
+  transition:color 100ms, background-color 250ms, border-color 100ms;
+}
+
 
 $signal-color-alt: dynamic(if($dark-mode, #ff4398, #ff4398));
 $signal-color: dynamic(if($dark-mode, #d4f400, #ff4500));
 $warning-background-color: dynamic(rgb(255, 178, 66));
 $warning-color: dynamic(rgb(255, 255, 255));
 
-$info-background-color: dynamic(#1b6383);
+$info-background-color: dynamic(#b91cff);
 $info-color: dynamic(#ffffff);
 
 $success-background-color:dynamic(#a2ff00);
