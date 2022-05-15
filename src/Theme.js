@@ -1,7 +1,7 @@
 /**
  * conjoon
  * extjs-theme-material
- * Copyright (C) 2020-2021 Thorsten Suckow-Homberg https://github.com/conjoon/extjs-theme-material
+ * Copyright (C) 2020-2022 Thorsten Suckow-Homberg https://github.com/conjoon/extjs-theme-material
  *
  * Permission is hereby granted, free of charge, to any person
  * obtaining a copy of this software and associated documentation
@@ -44,7 +44,8 @@ Ext.define("conjoon.theme.material.Theme", {
             config: {
                 "dark-mode": "true",
                 "accent-color": "#35baf6",
-                "accent-foreground-color": "#6b6b6b",
+                "accent-light-color": "#007bb3",
+                "accent-foreground-color": "rgba(107, 107, 107, 0.4)",
                 "base-color": "#35baf6",
                 "overlay-color": "rgba(0, 0 , 0, .6)",
                 "color": "#d6d6d6",
@@ -59,7 +60,9 @@ Ext.define("conjoon.theme.material.Theme", {
             config: {
                 "dark-mode": "false",
                 "accent-color": "#35baf6",
-                "accent-foreground-color": "#333333",
+                "accent-light-color": "#007bb3",
+                "accent-foreground-color": "rgba(107, 107, 107, 1)",
+                "base-foreground-color": "#333333",
                 "base-color": "#35baf6",
                 "overlay-color": "rgba(0, 0 , 0, .5)",
                 "color": "#484848"

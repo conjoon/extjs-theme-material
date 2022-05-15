@@ -36,6 +36,8 @@ export default {
 
         "conjoon.theme.material.overrides.cn_navport": "../overrides/coon/navport",
 
+        "conjoon.theme.material.plugin": "../classic/src/plugin",
+
         "conjoon.theme.material": "../src",
 
         /**
@@ -65,4 +67,3 @@ export default {
         js: "../node_modules/@l8js/l8/dist/l8.runtime.umd.js"
     }
 };
-
