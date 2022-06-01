@@ -1,7 +1,7 @@
 /**
  * conjoon
  * extjs-theme-material
- * Copyright (C) 2020-2021 Thorsten Suckow-Homberg https://github.com/conjoon/extjs-theme-material
+ * Copyright (C) 2020-2022 Thorsten Suckow-Homberg https://github.com/conjoon/extjs-theme-material
  *
  * Permission is hereby granted, free of charge, to any person
  * obtaining a copy of this software and associated documentation
@@ -28,15 +28,21 @@
  */
 Ext.define("conjoon.theme.material.overrides.cn_navport.view.NavigationToolbar", {
 
+    requires: [
+        "coon.core.ConfigManager"
+    ],
+
     override: "coon.navport.view.NavigationToolbar",
 
     initComponent: function () {
 
-        var me = this;
+        const
+            me = this,
+            title = coon.core.ConfigManager.get("conjoon", "application.title", "conjoon");
 
         Ext.apply(me.items[0], {
             cls: "conjoon-logo",
-            html: "<div class=\"main-logo\"><div class=\"fas fa-envelope logo\"></div>conjoon</div>",
+            html: `<div class="main-logo"><div class="fas fa-envelope logo"></div>${title}</div>`,
             width: 250
         });
 
