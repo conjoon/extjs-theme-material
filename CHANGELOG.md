@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.2.3](https://github.com/conjoon/extjs-theme-material/compare/v0.2.2...v0.2.3) (2022-06-01)
+
+
+### Bug Fixes
+
+* application title not shown in navigation bar ([a678a00](https://github.com/conjoon/extjs-theme-material/commit/a678a005073743ed967ee6e85dc5377d3d54f4b1))
+
 ### [0.2.2](https://github.com/conjoon/extjs-theme-material/compare/v0.2.1...v0.2.2) (2022-06-01)
 
 
