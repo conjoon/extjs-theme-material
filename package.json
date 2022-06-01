@@ -13,8 +13,8 @@
     "toolkit": "classic",
     "creator": "Thorsten Suckow-Homberg <thorsten@suckow-homberg.de>",
     "summary": "This NPM package contains overrides, sass and css directives for theming the conjoon application along with its packages with a material theme.",
-    "version": "0.2.1",
-    "compatVersion": "0.2.1",
+    "version": "0.2.2",
+    "compatVersion": "0.2.2",
     "format": "1",
     "slicer": {
       "js": [
@@ -68,7 +68,7 @@
     ]
   },
   "description": "This NPM package contains overrides, sass and css directives for theming the conjoon application along with its packages with a material theme.",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "main": "index.js",
   "directories": {
     "test": "tests"
