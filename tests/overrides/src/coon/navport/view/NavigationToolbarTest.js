@@ -45,7 +45,7 @@ StartTest(t => {
 
             t.it("Should properly override the NavigationToolbar",  t => {
 
-                coon.core.ConfigManager.register("conjoon", {application: {}});
+                coon.core.ConfigManager.register("conjoon", {});
 
                 toolbar = Ext.create("coon.navport.view.NavigationToolbar");
 
@@ -55,7 +55,7 @@ StartTest(t => {
                 t.expect(toolbar.down("component[cls=conjoon-logo]").html).toContain("conjoon</div>");
 
                 coon.core.ConfigManager.configs = undefined;
-                coon.core.ConfigManager.register("conjoon", {application: {title: "My Website Set By Config"}});
+                coon.core.ConfigManager.register("conjoon", {title: "My Website Set By Config"});
 
                 toolbar = Ext.create("coon.navport.view.NavigationToolbar");
 

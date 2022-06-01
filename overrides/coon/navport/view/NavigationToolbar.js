@@ -38,7 +38,7 @@ Ext.define("conjoon.theme.material.overrides.cn_navport.view.NavigationToolbar",
 
         const
             me = this,
-            title = coon.core.ConfigManager.get("conjoon", "application.title", "conjoon");
+            title = coon.core.ConfigManager.get("conjoon", "title", "conjoon");
 
         Ext.apply(me.items[0], {
             cls: "conjoon-logo",
