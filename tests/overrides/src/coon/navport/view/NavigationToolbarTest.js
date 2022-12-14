@@ -1,7 +1,7 @@
 /**
  * conjoon
  * extjs-theme-material
- * Copyright (C) 2020-2021 Thorsten Suckow-Homberg https://github.com/conjoon/extjs-theme-material
+ * Copyright (C) 2020-2022 Thorsten Suckow-Homberg https://github.com/conjoon/extjs-theme-material
  *
  * Permission is hereby granted, free of charge, to any person
  * obtaining a copy of this software and associated documentation
@@ -23,9 +23,13 @@
  * USE OR OTHER DEALINGS IN THE SOFTWARE.
  */
 
-describe("conjoon.theme.material.overrides.cn_navport.view.NavigationToolbarTest", function (t) {
+StartTest(t => {
 
-    var toolbar;
+    let toolbar;
+
+    t.beforeEach(function () {
+
+    });
 
     t.afterEach(function () {
         if (toolbar) {
@@ -35,18 +39,30 @@ describe("conjoon.theme.material.overrides.cn_navport.view.NavigationToolbarTest
     });
 
     // load override first
-    t.requireOk("conjoon.theme.material.overrides.cn_navport.view.NavigationToolbar", function () {
+    t.requireOk(
+        "coon.core.ConfigManager",
+        "conjoon.theme.material.overrides.cn_navport.view.NavigationToolbar", function () {
 
-        t.it("Should properly override the NavigationToolbar", function (t) {
+            t.it("Should properly override the NavigationToolbar",  t => {
 
-            toolbar = Ext.create("coon.navport.view.NavigationToolbar");
+                coon.core.ConfigManager.register("conjoon", {});
 
-            t.expect(toolbar.down("component").reference).toContain("cn_navport_ref_applogo");
+                toolbar = Ext.create("coon.navport.view.NavigationToolbar");
 
-            t.expect(toolbar.down("button").reference).toContain("cn_navport_ref_hidenavbtn");
+                t.expect(toolbar.down("component").reference).toContain("cn_navport_ref_applogo");
+                t.expect(toolbar.down("button").reference).toContain("cn_navport_ref_hidenavbtn");
+
+                t.expect(toolbar.down("component[cls=conjoon-logo]").html).toContain("conjoon</div>");
+
+                coon.core.ConfigManager.configs = undefined;
+                coon.core.ConfigManager.register("conjoon", {title: "My Website Set By Config"});
+
+                toolbar = Ext.create("coon.navport.view.NavigationToolbar");
+
+                t.expect(toolbar.down("component[cls=conjoon-logo]").html).toContain("My Website Set By Config</div>");
+            });
+
         });
-
-    });
 
 
 });
