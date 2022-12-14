@@ -1,7 +1,7 @@
 /**
  * conjoon
  * extjs-theme-material
- * Copyright (C) 2020-2021 Thorsten Suckow-Homberg https://github.com/conjoon/extjs-theme-material
+ * Copyright (C) 2020-2022 Thorsten Suckow-Homberg https://github.com/conjoon/extjs-theme-material
  *
  * Permission is hereby granted, free of charge, to any person
  * obtaining a copy of this software and associated documentation
@@ -42,13 +42,13 @@
 }
 
 .x-form-text-default .x-tagfield-item {
-  background-color: var(--accent-dark-color);
-  border: 1px solid var(--accent-dark-color);
-  color: var(--accent-light-color);
+  background-color: var(--accent-foreground-color);
+  border:1px solid var(--accent-foreground-color);
+  color: var(--accent-color);
 }
 
 .x-form-text-default .x-tagfield-item-close {
-  color: var(--accent-light-color);
+  color: var(--accent-color);
 }
 
 .x-form-text-default .x-tagfield-input-field {
